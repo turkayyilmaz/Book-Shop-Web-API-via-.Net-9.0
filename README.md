@@ -1,0 +1,1 @@
+Bu kursu sertifikasını aldığım BTK Akademi Zafer Cömert Asp.Net Core Web API kursu ile tamamladım. Kursta kullanılan .Net sürümleri ile benim kullandığım sürümler farklıdır. Sürüm konusunda güncel sürümleri tercih ettim.
