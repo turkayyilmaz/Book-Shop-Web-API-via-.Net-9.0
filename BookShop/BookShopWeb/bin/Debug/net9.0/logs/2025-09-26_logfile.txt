@@ -1,0 +1,1 @@
+2025-09-26 18:35:45.5299 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBookOptions","Id":null,"CreatedAt":"2025-09-26T18:35:45.5118978+03:00"}

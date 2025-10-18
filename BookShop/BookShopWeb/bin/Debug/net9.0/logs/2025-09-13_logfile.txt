@@ -1,0 +1,124 @@
+2025-09-13 15:11:16.8738 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T15:11:16.8235302+03:00"}
+2025-09-13 15:11:28.7154 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T15:11:28.7152028+03:00"}
+2025-09-13 15:12:25.8095 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T15:12:25.8094028+03:00"}
+2025-09-13 15:12:35.1688 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T15:12:35.1686923+03:00"}
+2025-09-13 15:12:46.3069 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T15:12:46.3068624+03:00"}
+2025-09-13 15:14:06.6140 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T15:14:06.6139267+03:00"}
+2025-09-13 15:14:37.9435 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T15:14:37.943428+03:00"}
+2025-09-13 15:14:48.2071 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T15:14:48.2069999+03:00"}
+2025-09-13 16:50:54.3476 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T16:50:54.3098157+03:00"}
+2025-09-13 16:50:55.9865 ERROR Something went wrong: System.ArgumentException: Value cannot be empty. (Parameter 'ordering')
+   at System.Linq.Dynamic.Core.Validation.Check.NotNullOrWhiteSpace(String value, String parameterName)
+   at System.Linq.Dynamic.Core.Validation.Check.NotEmpty(String value, String parameterName)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.InternalOrderBy(IQueryable source, ParsingConfig config, String ordering, Object comparer, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy(IQueryable source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, String ordering, Object[] args)
+   at Repositories.Concretes.Extensions.BookRepositoryExtension.Sort(IQueryable`1 books, String orderByQueryString) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Repositories\Concretes\Extensions\BookRepositoryExtension.cs:line 46
+   at Repositories.Concretes.BookRepository.GetAllBooksAsync(BookParameters bookParameters, Boolean trackChanges) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Repositories\Concretes\BookRepository.cs:line 29
+   at Services.Concretes.BookService.GetAllBooksAsync(BookParameters bookParameters, Boolean trackChanges) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\BookService.cs:line 31
+   at Presentations.Controllers.BookController.GetBooks(BookParameters bookParameters) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Presentations\Controllers\BookController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-09-13 16:51:10.5167 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T16:51:10.5166936+03:00"}
+2025-09-13 16:51:10.6052 ERROR Something went wrong: System.ArgumentException: Value cannot be empty. (Parameter 'ordering')
+   at System.Linq.Dynamic.Core.Validation.Check.NotNullOrWhiteSpace(String value, String parameterName)
+   at System.Linq.Dynamic.Core.Validation.Check.NotEmpty(String value, String parameterName)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.InternalOrderBy(IQueryable source, ParsingConfig config, String ordering, Object comparer, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy(IQueryable source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, String ordering, Object[] args)
+   at Repositories.Concretes.Extensions.BookRepositoryExtension.Sort(IQueryable`1 books, String orderByQueryString) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Repositories\Concretes\Extensions\BookRepositoryExtension.cs:line 46
+   at Repositories.Concretes.BookRepository.GetAllBooksAsync(BookParameters bookParameters, Boolean trackChanges) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Repositories\Concretes\BookRepository.cs:line 29
+   at Services.Concretes.BookService.GetAllBooksAsync(BookParameters bookParameters, Boolean trackChanges) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\BookService.cs:line 31
+   at Presentations.Controllers.BookController.GetBooks(BookParameters bookParameters) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Presentations\Controllers\BookController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-09-13 16:52:09.6341 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T16:52:09.6340702+03:00"}
+2025-09-13 16:52:20.2697 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T16:52:20.2695711+03:00"}
+2025-09-13 16:52:20.2772 ERROR Something went wrong: System.ArgumentException: Value cannot be empty. (Parameter 'ordering')
+   at System.Linq.Dynamic.Core.Validation.Check.NotNullOrWhiteSpace(String value, String parameterName)
+   at System.Linq.Dynamic.Core.Validation.Check.NotEmpty(String value, String parameterName)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.InternalOrderBy(IQueryable source, ParsingConfig config, String ordering, Object comparer, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy(IQueryable source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, String ordering, Object[] args)
+   at Repositories.Concretes.Extensions.BookRepositoryExtension.Sort(IQueryable`1 books, String orderByQueryString) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Repositories\Concretes\Extensions\BookRepositoryExtension.cs:line 46
+   at Repositories.Concretes.BookRepository.GetAllBooksAsync(BookParameters bookParameters, Boolean trackChanges) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Repositories\Concretes\BookRepository.cs:line 29
+   at Services.Concretes.BookService.GetAllBooksAsync(BookParameters bookParameters, Boolean trackChanges) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\BookService.cs:line 31
+   at Presentations.Controllers.BookController.GetBooks(BookParameters bookParameters) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Presentations\Controllers\BookController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-09-13 16:52:47.1444 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T16:52:47.1443876+03:00"}
+2025-09-13 16:52:47.1500 ERROR Something went wrong: System.ArgumentException: Value cannot be empty. (Parameter 'ordering')
+   at System.Linq.Dynamic.Core.Validation.Check.NotNullOrWhiteSpace(String value, String parameterName)
+   at System.Linq.Dynamic.Core.Validation.Check.NotEmpty(String value, String parameterName)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.InternalOrderBy(IQueryable source, ParsingConfig config, String ordering, Object comparer, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy(IQueryable source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, String ordering, Object[] args)
+   at Repositories.Concretes.Extensions.BookRepositoryExtension.Sort(IQueryable`1 books, String orderByQueryString) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Repositories\Concretes\Extensions\BookRepositoryExtension.cs:line 46
+   at Repositories.Concretes.BookRepository.GetAllBooksAsync(BookParameters bookParameters, Boolean trackChanges) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Repositories\Concretes\BookRepository.cs:line 29
+   at Services.Concretes.BookService.GetAllBooksAsync(BookParameters bookParameters, Boolean trackChanges) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\BookService.cs:line 31
+   at Presentations.Controllers.BookController.GetBooks(BookParameters bookParameters) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Presentations\Controllers\BookController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-09-13 16:55:18.7001 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T16:55:18.6843245+03:00"}
+2025-09-13 16:55:32.3817 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T16:55:32.3817052+03:00"}
+2025-09-13 16:55:42.0431 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T16:55:42.0430769+03:00"}
+2025-09-13 16:57:26.1809 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T16:57:26.162946+03:00"}
+2025-09-13 16:58:34.2615 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T16:58:34.2615151+03:00"}
+2025-09-13 16:58:45.0621 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T16:58:45.0620703+03:00"}
+2025-09-13 16:58:55.3195 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T16:58:55.3194365+03:00"}
+2025-09-13 16:59:45.7844 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T16:59:45.7844125+03:00"}
+2025-09-13 17:00:06.4284 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T17:00:06.4283912+03:00"}
+2025-09-13 17:00:32.0699 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T17:00:32.0698901+03:00"}
+2025-09-13 17:00:51.5280 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T17:00:51.527998+03:00"}
+2025-09-13 17:01:37.2086 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T17:01:37.2085971+03:00"}
+2025-09-13 17:01:50.0667 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T17:01:50.0666968+03:00"}
+2025-09-13 17:19:10.5609 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T17:19:10.5608351+03:00"}
+2025-09-13 17:19:35.1425 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T17:19:35.1425002+03:00"}
+2025-09-13 17:21:34.3880 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T17:21:34.3879974+03:00"}
+2025-09-13 17:21:45.4091 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T17:21:45.4090729+03:00"}
+2025-09-13 17:21:58.8908 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T17:21:58.8908091+03:00"}
+2025-09-13 17:38:04.3832 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-13T17:38:04.3646996+03:00"}

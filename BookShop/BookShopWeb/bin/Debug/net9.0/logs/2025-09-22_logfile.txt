@@ -1,0 +1,167 @@
+2025-09-22 17:29:32.4236 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T17:29:32.3800654+03:00"}
+2025-09-22 17:33:26.1870 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T17:33:26.1506302+03:00"}
+2025-09-22 17:34:01.2672 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T17:34:01.2671198+03:00"}
+2025-09-22 17:34:01.4427 ERROR Something went wrong: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.Concretes.DataShaper`1.FetchDataForEntity(T entity, IEnumerable`1 requiredProperties) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\DataShaper.cs:line 62
+   at Services.Concretes.DataShaper`1.FetchData(IEnumerable`1 entities, IEnumerable`1 requiredProperties) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\DataShaper.cs:line 71
+   at Services.Concretes.DataShaper`1.ShapeData(IEnumerable`1 entities, String fieldsString) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\DataShaper.cs:line 25
+   at Services.Concretes.BookLinks.ShapeData(IEnumerable`1 booksDto, String fields) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\BookLinks.cs:line 60
+   at Services.Concretes.BookLinks.TryGenerateLinks(IEnumerable`1 booksDto, String fields, HttpContext httpContext) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\BookLinks.cs:line 23
+   at Services.Concretes.BookService.GetAllBooksAsync(LinkParameters linkParameters, Boolean trackChanges) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\BookService.cs:line 38
+   at Presentations.Controllers.BookController.GetBooks(BookParameters bookParameters) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Presentations\Controllers\BookController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-09-22 17:34:29.7149 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T17:34:29.7148693+03:00"}
+2025-09-22 17:34:29.7620 ERROR Something went wrong: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.Concretes.DataShaper`1.FetchDataForEntity(T entity, IEnumerable`1 requiredProperties) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\DataShaper.cs:line 62
+   at Services.Concretes.DataShaper`1.FetchData(IEnumerable`1 entities, IEnumerable`1 requiredProperties) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\DataShaper.cs:line 71
+   at Services.Concretes.DataShaper`1.ShapeData(IEnumerable`1 entities, String fieldsString) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\DataShaper.cs:line 25
+   at Services.Concretes.BookLinks.ShapeData(IEnumerable`1 booksDto, String fields) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\BookLinks.cs:line 60
+   at Services.Concretes.BookLinks.TryGenerateLinks(IEnumerable`1 booksDto, String fields, HttpContext httpContext) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\BookLinks.cs:line 23
+   at Services.Concretes.BookService.GetAllBooksAsync(LinkParameters linkParameters, Boolean trackChanges) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\BookService.cs:line 38
+   at Presentations.Controllers.BookController.GetBooks(BookParameters bookParameters) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Presentations\Controllers\BookController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-09-22 17:35:51.5329 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T17:35:51.5328139+03:00"}
+2025-09-22 17:35:58.3909 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T17:35:58.3909179+03:00"}
+2025-09-22 17:36:29.7971 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T17:36:29.7970235+03:00"}
+2025-09-22 17:37:14.6177 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T17:37:14.6176419+03:00"}
+2025-09-22 17:37:14.6354 ERROR Something went wrong: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.Concretes.DataShaper`1.FetchDataForEntity(T entity, IEnumerable`1 requiredProperties) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\DataShaper.cs:line 62
+   at Services.Concretes.DataShaper`1.FetchData(IEnumerable`1 entities, IEnumerable`1 requiredProperties) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\DataShaper.cs:line 71
+   at Services.Concretes.DataShaper`1.ShapeData(IEnumerable`1 entities, String fieldsString) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\DataShaper.cs:line 25
+   at Services.Concretes.BookLinks.ShapeData(IEnumerable`1 booksDto, String fields) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\BookLinks.cs:line 60
+   at Services.Concretes.BookLinks.TryGenerateLinks(IEnumerable`1 booksDto, String fields, HttpContext httpContext) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\BookLinks.cs:line 23
+   at Services.Concretes.BookService.GetAllBooksAsync(LinkParameters linkParameters, Boolean trackChanges) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\BookService.cs:line 38
+   at Presentations.Controllers.BookController.GetBooks(BookParameters bookParameters) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Presentations\Controllers\BookController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-09-22 17:37:36.5209 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T17:37:36.5208863+03:00"}
+2025-09-22 17:37:36.5393 ERROR Something went wrong: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.Concretes.DataShaper`1.FetchDataForEntity(T entity, IEnumerable`1 requiredProperties) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\DataShaper.cs:line 62
+   at Services.Concretes.DataShaper`1.FetchData(IEnumerable`1 entities, IEnumerable`1 requiredProperties) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\DataShaper.cs:line 71
+   at Services.Concretes.DataShaper`1.ShapeData(IEnumerable`1 entities, String fieldsString) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\DataShaper.cs:line 25
+   at Services.Concretes.BookLinks.ShapeData(IEnumerable`1 booksDto, String fields) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\BookLinks.cs:line 60
+   at Services.Concretes.BookLinks.TryGenerateLinks(IEnumerable`1 booksDto, String fields, HttpContext httpContext) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\BookLinks.cs:line 23
+   at Services.Concretes.BookService.GetAllBooksAsync(LinkParameters linkParameters, Boolean trackChanges) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\BookService.cs:line 38
+   at Presentations.Controllers.BookController.GetBooks(BookParameters bookParameters) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Presentations\Controllers\BookController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-09-22 17:38:01.3971 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T17:38:01.3970388+03:00"}
+2025-09-22 17:38:01.4132 ERROR Something went wrong: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.Concretes.DataShaper`1.FetchDataForEntity(T entity, IEnumerable`1 requiredProperties) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\DataShaper.cs:line 62
+   at Services.Concretes.DataShaper`1.FetchData(IEnumerable`1 entities, IEnumerable`1 requiredProperties) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\DataShaper.cs:line 71
+   at Services.Concretes.DataShaper`1.ShapeData(IEnumerable`1 entities, String fieldsString) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\DataShaper.cs:line 25
+   at Services.Concretes.BookLinks.ShapeData(IEnumerable`1 booksDto, String fields) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\BookLinks.cs:line 60
+   at Services.Concretes.BookLinks.TryGenerateLinks(IEnumerable`1 booksDto, String fields, HttpContext httpContext) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\BookLinks.cs:line 23
+   at Services.Concretes.BookService.GetAllBooksAsync(LinkParameters linkParameters, Boolean trackChanges) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\BookService.cs:line 38
+   at Presentations.Controllers.BookController.GetBooks(BookParameters bookParameters) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Presentations\Controllers\BookController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-09-22 17:39:45.2182 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T17:39:45.1873934+03:00"}
+2025-09-22 17:39:46.9560 ERROR Something went wrong: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.Concretes.DataShaper`1.FetchDataForEntity(T entity, IEnumerable`1 requiredProperties) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\DataShaper.cs:line 62
+   at Services.Concretes.DataShaper`1.FetchData(IEnumerable`1 entities, IEnumerable`1 requiredProperties) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\DataShaper.cs:line 71
+   at Services.Concretes.DataShaper`1.ShapeData(IEnumerable`1 entities, String fieldsString) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\DataShaper.cs:line 25
+   at Services.Concretes.BookLinks.ShapeData(IEnumerable`1 booksDto, String fields) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\BookLinks.cs:line 60
+   at Services.Concretes.BookLinks.TryGenerateLinks(IEnumerable`1 booksDto, String fields, HttpContext httpContext) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\BookLinks.cs:line 23
+   at Services.Concretes.BookService.GetAllBooksAsync(LinkParameters linkParameters, Boolean trackChanges) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\BookService.cs:line 38
+   at Presentations.Controllers.BookController.GetBooks(BookParameters bookParameters) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Presentations\Controllers\BookController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-09-22 17:39:53.5909 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T17:39:53.5908428+03:00"}
+2025-09-22 17:40:07.3151 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T17:40:07.315012+03:00"}
+2025-09-22 17:44:29.8687 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T17:44:29.8530157+03:00"}
+2025-09-22 17:44:31.1246 ERROR Something went wrong: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Services.Concretes.DataShaper`1.FetchDataForEntity(T entity, IEnumerable`1 requiredProperties) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\DataShaper.cs:line 62
+   at Services.Concretes.DataShaper`1.FetchData(IEnumerable`1 entities, IEnumerable`1 requiredProperties) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\DataShaper.cs:line 71
+   at Services.Concretes.DataShaper`1.ShapeData(IEnumerable`1 entities, String fieldsString) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\DataShaper.cs:line 25
+   at Services.Concretes.BookLinks.ShapeData(IEnumerable`1 booksDto, String fields) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\BookLinks.cs:line 60
+   at Services.Concretes.BookLinks.TryGenerateLinks(IEnumerable`1 booksDto, String fields, HttpContext httpContext) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\BookLinks.cs:line 23
+   at Services.Concretes.BookService.GetAllBooksAsync(LinkParameters linkParameters, Boolean trackChanges) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Services\Concretes\BookService.cs:line 38
+   at Presentations.Controllers.BookController.GetBooks(BookParameters bookParameters) in C:\Users\ASUS\Desktop\2025 Projeler\BookShop\Presentations\Controllers\BookController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-09-22 17:55:58.1346 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T17:55:58.1167085+03:00"}
+2025-09-22 17:58:49.0350 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T17:58:49.0068286+03:00"}
+2025-09-22 18:00:48.0974 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T18:00:48.0820106+03:00"}
+2025-09-22 18:01:00.6349 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T18:01:00.6347615+03:00"}
+2025-09-22 18:01:27.1461 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T18:01:27.1459427+03:00"}
+2025-09-22 18:01:46.4512 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T18:01:46.4511699+03:00"}
+2025-09-22 22:49:44.0621 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T22:49:43.9113239+03:00"}
+2025-09-22 22:54:48.4002 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T22:54:48.3381315+03:00"}
+2025-09-22 22:55:08.6155 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T22:55:08.6154575+03:00"}
+2025-09-22 22:55:22.6560 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T22:55:22.6559378+03:00"}
+2025-09-22 22:55:31.2941 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T22:55:31.2939927+03:00"}
+2025-09-22 22:56:00.8574 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T22:56:00.8573262+03:00"}
+2025-09-22 22:56:08.7146 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T22:56:08.7145804+03:00"}
+2025-09-22 22:56:50.4582 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T22:56:50.4581831+03:00"}
+2025-09-22 22:57:32.4308 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T22:57:32.4307119+03:00"}
+2025-09-22 22:58:00.7506 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T22:58:00.7504675+03:00"}
+2025-09-22 22:58:06.6386 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T22:58:06.6386043+03:00"}
+2025-09-22 23:03:10.0061 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T23:03:09.9397189+03:00"}
+2025-09-22 23:03:31.0093 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T23:03:31.0091103+03:00"}
+2025-09-22 23:03:53.0692 INFO {"ModelName":"OnActionExecuting","Controller":"Book","Action":"GetBooks","Id":null,"CreatedAt":"2025-09-22T23:03:53.0691308+03:00"}
